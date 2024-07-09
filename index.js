@@ -127,9 +127,7 @@ async function run() {
             res.send({ permission })
         })
 
-
         // get single user by id
-
         app.get('/user/:id', async (req, res) => {
             const id = req.params.id;
             const query = { _id: new ObjectId(id) }
