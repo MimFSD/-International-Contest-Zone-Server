@@ -38,8 +38,6 @@ async function run() {
         const upcomingCollection = client.db("ContestHub").collection('upcoming')
 
 
-
-
         // token implement....
 
         app.post('/jwt', async (req, res) => {
