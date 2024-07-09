@@ -58,9 +58,7 @@ async function run() {
                 }
                 req.user = decoded
                 next()
-            })
-
-
+            }  )
         }
         // verify admin
         const verifyAdmin = async (req, res, next) => {
