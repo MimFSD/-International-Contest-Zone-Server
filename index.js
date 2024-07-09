@@ -99,7 +99,6 @@ async function run() {
         })
 
         //  find role :--
-
         app.get('/users/:email', async (req, res) => {
             const email = req.params.email;
             const query = { email: email }
@@ -125,7 +124,6 @@ async function run() {
                 permission = result?.status
 
             }
-
             res.send({ permission })
         })
 
