@@ -59,6 +59,7 @@ async function run() {
                 req.user = decoded
                 next()
             }  )
+
         }
         // verify admin
         const verifyAdmin = async (req, res, next) => {
@@ -72,8 +73,6 @@ async function run() {
             next()
 
         }
-
-
         // add all user in dataBase-----------
 
         app.post('/users', async (req, res) => {
